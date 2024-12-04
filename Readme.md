@@ -37,6 +37,8 @@ não é necessario nenhum servidor Web, você pode testar a aplicação utilizan
 # 📄 Release Notes (manter sempre atualizado)
 - [Release/1.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/1.0.0)
 > Implementação das features de criptografia e descriptografia, documentação de apoio.
+- [Release/2.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/2.0.0)
+> Inclusão da classe LocalTest para facilitação de testes e debugs, criação da documentação.
 
 # ⚒️ WorkFlow do projeto
 ![img.png](img.png)
