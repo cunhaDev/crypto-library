@@ -17,15 +17,4 @@ public class CryptographyFacade {
     public String decrypt(String data) throws Exception {
         return service.decrypt(data);
     }
-
-//TODO class to test encrypt and decrypt methods
-//    public static void main(String[] args) throws Exception {
-//        CryptographyService cryptographyFacade = new CryptographyService();
-//
-//        String encryptedText = cryptographyFacade.encrypt("test-data");
-//        System.out.println("Encrypted Text: " + encryptedText);
-//
-//        String decryptedText = cryptographyFacade.decrypt(encryptedText);
-//        System.out.println("Decrypted Text: " + decryptedText);
-//    }
 }
