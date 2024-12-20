@@ -41,26 +41,50 @@ não é necessario nenhum servidor Web, você pode testar a aplicação utilizan
 > Inclusão da classe LocalTest para facilitação de testes e debugs, criação da documentação.
 - [Release/3.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/3.0.0)
 > Refatoração da CI, melhorias de código e configuração para publicação do artefato no nexus.
+- [Release/4.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/4.0.0)
+> Ajuste em documentação e testes unitarios
 
 # ⚒️ WorkFlow do projeto
 ![img.png](img.png)
 
-# ⚙️ Como implementar e utilizar em seu projeto
-- Aplicações Gradle, adicione o seguinte código ao seu arquivo build.gradle:
+# ⚙️ Como implementar em seu projeto
+- Aplicações Gradle, adicione o seguinte código ao seu arquivo build.gradle em repositories:
 ```sh
-implementation 'com.mateus:crypto-library:1.0.0'
+maven {
+    url 'http://localhost:8081/repository/maven-releases/'
+    allowInsecureProtocol = true
+}
 ```
-- Aplicações Maven, adicione o seguinte código ao seu arquivo pom.xml:
+- Aplicações Gradle, adicione o seguinte código ao seu arquivo build.gradle em dependencies:
 ```sh
-<dependencies>
-    <dependency>
-        <groupId>com.mateus</groupId>
-        <artifactId>crypto-library</artifactId>
-        <version>1.0.0</version>
-    </dependency>
-</dependencies>
+implementation 'com.xpe.projetoaplicado:crypto-library:1.0.0'
+```
 
+- Aplicações Maven, adicione o seguinte código ao seu arquivo pom.xml em repositories:
+```sh
+<repository>
+    <id>nexus-repository</id>
+    <url>http://localhost:8081/repository/maven-releases/</url>
+</repository>
 ```
+- Aplicações Maven, adicione o seguinte código ao seu arquivo pom.xml em dependencies:
+```sh
+<dependency>
+  <groupId>com.xpe.projetoaplicado</groupId>
+  <artifactId>crypto-library</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+# ⚙️ Como Utilizar em seu projeto
+- Faça a injeção da classe CryptographyFacade e invoque seus métodos conforme abaixo:
+  ![img2.png](img2.png)
+
+## Criptografia
+- Invoque o método encrypt e armazene seu resultado onde for necessario
+
+## Descriptografia
+- Invoque o método decrypt e utilize o valor retornado anteriormente pelo encrypt para obter suas informações
 
 # 📚 Leitura recomendada
 - [Arquitetura em Camadas](https://escolalbk.com.br/glossario/o-que-e-layered-architecture-arquitetura-em-camadas/)
