@@ -4,7 +4,7 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import java.security.PrivateKey;
 
-public class DecryptService {
+public final class DecryptService {
 
     public byte[] decryptWith3DES(byte[] data, SecretKey key) throws Exception {
         Cipher cipher = Cipher.getInstance("DESede");
