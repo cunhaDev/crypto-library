@@ -5,7 +5,7 @@ import javax.crypto.SecretKey;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 
-public class EncryptionConfig {
+public final class EncryptionConfig {
 
     public static SecretKey generate3DESKey() throws Exception {
         KeyGenerator keyGenerator = KeyGenerator.getInstance("DESede");

@@ -1,4 +1,4 @@
-name: build
+name: Build and Publish to Nexus
 
 on:
   push:
@@ -6,20 +6,20 @@ on:
       - main
 
 jobs:
-  build:
+  build_and_publish:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
           distribution: 'temurin'
+          java-version: '17'
 
-      - name: Cache Gradle packages
+      - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
           path: ~/.gradle/caches
@@ -27,5 +27,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Build with Gradle
-        run: ./gradlew clean build
+      - name: Build the project
+        run: |
+          ./gradlew build
+#
+#      - name: Publish to Nexus
+#        run: |
+#          ./gradlew publish

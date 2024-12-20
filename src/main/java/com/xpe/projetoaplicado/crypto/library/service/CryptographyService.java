@@ -6,7 +6,7 @@ import javax.crypto.SecretKey;
 import java.security.KeyPair;
 import java.util.Base64;
 
-public class CryptographyService {
+public final class CryptographyService {
 
     private final EncryptService encryptService = new EncryptService();
     private final DecryptService decryptService = new DecryptService();

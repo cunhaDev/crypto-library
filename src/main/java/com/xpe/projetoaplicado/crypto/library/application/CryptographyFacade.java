@@ -1,14 +1,13 @@
 package com.xpe.projetoaplicado.crypto.library.application;
 
 import com.xpe.projetoaplicado.crypto.library.service.CryptographyService;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
-@NoArgsConstructor
 public class CryptographyFacade {
 
-    private CryptographyService service;
+    private final CryptographyService service = new CryptographyService();
+
+    public CryptographyFacade() throws Exception {
+    }
 
     public String encrypt(String data) throws Exception {
         return service.encrypt(data);
