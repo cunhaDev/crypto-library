@@ -77,14 +77,26 @@ implementation 'com.xpe.projetoaplicado:crypto-library:1.0.0'
 ```
 
 # ⚙️ Como Utilizar em seu projeto
-- Faça a injeção da classe CryptographyFacade e invoque seus métodos conforme abaixo:
-  ![img2.png](img2.png)
-
 ## Criptografia
-- Invoque o método encrypt e armazene seu resultado onde for necessario
-
+- Para criptografar informações, faça a chamada da classe **CryptographyFacade** e utilize o método **encrypt**:
+```java
+CryptographyFacade cryptographyFacade = new CryptographyFacade();
+String encryptedText = cryptographyFacade.encrypt("your data");
+```
 ## Descriptografia
-- Invoque o método decrypt e utilize o valor retornado anteriormente pelo encrypt para obter suas informações
+- Para descriptografar informações, faça a chamada da classe **CryptographyFacade** e utilize o método **decrypt** informando o resultado obtido anteriormente ao realizar
+a criptografia.
+```java
+CryptographyFacade cryptographyFacade = new CryptographyFacade();
+String decryptedText = cryptographyFacade.decrypt("encryptedText");
+```
+
+# Possiveis Erros e como corrigi-los
+## Padding error in decryption
+- Este erro ocorreu pois a criptografia falhou por algum erro interno, é aconselhavel que realize novamente a criptografia para obter o resultado correto.
+
+## Internal Server Erro
+- Este erro pode ter ocorrido devido algum bug em nossa biblioteca, fique de olho nas Releases para utilizar sempre a versão mas estavel.
 
 # 📚 Leitura recomendada
 - [Arquitetura em Camadas](https://escolalbk.com.br/glossario/o-que-e-layered-architecture-arquitetura-em-camadas/)
