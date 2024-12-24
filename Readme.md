@@ -43,6 +43,8 @@ não é necessario nenhum servidor Web, você pode testar a aplicação utilizan
 > Refatoração da CI, melhorias de código e configuração para publicação do artefato no nexus.
 - [Release/4.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/4.0.0)
 > Ajuste em documentação e testes unitarios
+- [Release/5.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/5.0.0)
+> Ajuste em construtor da classe CryptographyFacade e inclusão de testes unitarios
 
 # ⚒️ WorkFlow do projeto
 ![img.png](img.png)
