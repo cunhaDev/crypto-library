@@ -36,10 +36,13 @@ não é necessario nenhum servidor Web, você pode testar a aplicação utilizan
 - [Release/5.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/5.0.0)
 > Ajuste em construtor da classe CryptographyFacade e inclusão de testes unitarios
 
-# ⚒️ WorkFlow interno da biblioteca
+# WorkFlow interno da biblioteca
 ![image](https://github.com/user-attachments/assets/71075bc5-527a-4adc-ac40-3ba3b3ce1e7a)
 
-# ⚙️ Como implementar em seu projeto
+# Como sua aplicação vai interagir com a nossa Biblioteca
+![image](https://github.com/user-attachments/assets/a7a5fafe-5ce0-4769-a1eb-76e30ce2a8d7)
+
+# Como implementar em seu projeto
 - Aplicações Gradle, adicione o seguinte código ao seu arquivo build.gradle em repositories:
 ```sh
 maven {
@@ -68,7 +71,7 @@ implementation 'com.xpe.projetoaplicado:crypto-library:1.0.0'
 </dependency>
 ```
 
-# ⚙️ Como Utilizar em seu projeto
+# Como fazer uso
 ## Criptografia
 - Para criptografar informações, faça a chamada da classe **CryptographyFacade** e utilize o método **encrypt**:
 ```java
