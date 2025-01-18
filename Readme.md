@@ -94,6 +94,7 @@ String decryptedText = cryptographyFacade.decrypt("encryptedText");
 - Este erro pode ter ocorrido devido algum bug em nossa biblioteca, fique de olho nas Releases para utilizar sempre a versão mas estavel.
 
 # 📚 Leitura recomendada
+- [Relatório de Apresentação do Projeto](https://docs.google.com/document/d/1mfVI9MFjkF80qcao8E0AMcBTxs167App/edit)
 - [Arquitetura em Camadas](https://escolalbk.com.br/glossario/o-que-e-layered-architecture-arquitetura-em-camadas/)
 - [Design Pattern FACADE](https://refactoring.guru/pt-br/design-patterns/facade)
 - [Conhecendo RSA](https://www.baeldung.com/java-rsa)
