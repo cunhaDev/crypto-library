@@ -22,17 +22,7 @@ não é necessario nenhum servidor Web, você pode testar a aplicação utilizan
 ```
 
 # Tecnologias utilizadas
-
-- Linguagem de programação:
-  > Java
-- Criptografia e Descriptografia
-  > RSA + 3DES
-- Arquitetura
-  > Arquitetura em Camadas (Layered Architecture)
-- Gerenciamento de dependencias
-  > Gradle
-- Documentação
-  > Readme
+![image](https://github.com/user-attachments/assets/bf1ad750-9f2c-47f7-a26c-ef6c8a3814a6)
   
 # 📄 Release Notes (versionamento de código)
 - [Release/1.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/1.0.0)
@@ -46,8 +36,8 @@ não é necessario nenhum servidor Web, você pode testar a aplicação utilizan
 - [Release/5.0.0](https://github.com/cunhaDev/crypto-library/tree/Release/5.0.0)
 > Ajuste em construtor da classe CryptographyFacade e inclusão de testes unitarios
 
-# ⚒️ WorkFlow do projeto
-![img.png](img.png)
+# ⚒️ WorkFlow interno da biblioteca
+![image](https://github.com/user-attachments/assets/71075bc5-527a-4adc-ac40-3ba3b3ce1e7a)
 
 # ⚙️ Como implementar em seu projeto
 - Aplicações Gradle, adicione o seguinte código ao seu arquivo build.gradle em repositories:
